@@ -1,4 +1,10 @@
-//@prepros-append jq-start.js
-//@prepros-append forms.js
-//@prepros-append script.js
-//@prepros-append jq-end.js
+ 
+$('.wrapper').addClass('loaded');
+
+ $(".icon-menu").click(function(event){
+    $(this).toggleClass('active');
+    $('.menu__body').toggleClass('active');
+    $('body').toggleClass('lock');
+    }
+        );
+ 
