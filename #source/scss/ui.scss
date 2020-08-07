@@ -180,38 +180,47 @@ body.ie {
 .slick-slider {
 	position: relative;
 	.slick-track,
+	.slick-list {}
 	.slick-list {
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		-ms-transform: translate3d(0, 0, 0);
-		-o-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-	}
-	.slick-list {
-		position: relative;
 		overflow: hidden;
-		width: 100%;
 	}
 	.slick-track {
-		position: relative;
-		width: 100%;
 		@include flexbox();
+		align-items:flex-start;
 	}
 	.slick-slide {
-		position: relative;
 	}
-	.slick-arrow {
-		&.slick-prev {
-		}
-		&.slick-next {
-		}
-	}
+	// .slick-arrow {
+	// 	&.slick-prev {
+	// 	}
+	// 	&.slick-next {
+	// 	}
+	// }
 	.slick-dots {
+		@include flexbox();
+		justify-content:center;
+		align-items:center;
 		li {
+			padding-top: 104px;
+			
+			
 			button {
+				
+				
+				margin-right: 4px;
+		
+				border-radius:50%;
+				font-size: 0;
+				width: 11px;
+				height: 11px;
+				border: 1px solid #c8c8c8;
+				background-color: transparent;
+
 			}
 			&.slick-active {
 				button {
+					border: 1px solid #c8c8c8;
+				background-color: #c8c8c8;
 				}
 			}
 		}

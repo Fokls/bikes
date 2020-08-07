@@ -1,6 +1,6 @@
 //SLIDERS
-if($('.mainslider').length>0){
-	$('.mainslider').slick({
+if($('.slider__body').length>0){
+	$('.slider__body').slick({
 		//autoplay: true,
 		//infinite: false,
 		dots: true,
@@ -8,11 +8,12 @@ if($('.mainslider').length>0){
 		accessibility:false,
 		slidesToShow:1,
 		autoplaySpeed: 3000,
+		adaptiveHeight:true,
 		//asNavFor:'',
 		//appendDots:
 		//appendArrows:$('.mainslider-arrows .container'),
 		nextArrow:'<button type="button" class="slick-next"></button>',
-		prevArrow:'<button type="button" class="slick-prev"></button>',
+		prevArrow:'<button type="buttonцй" class="slick-prev"></button>',
 		responsive: [{
 			breakpoint: 768,
 			settings: {}
